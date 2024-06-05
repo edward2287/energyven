@@ -8,17 +8,18 @@
 
 :root {
     /* colors */
-    --verde_claro: #69da32;
-    --verde_oscuro: #002e00;
-    --verde_oliva: #4e8d08;
-    --blanco: #fff;
-    --negro: #000;
-    --texto: #333;
-    /* transitions */
-    --transition03: all .3 ease;
-    --transition05: all .5 ease;
-    --transition01: all .1 ease;
+    --body-color:#f8f8f8;
+    --nav-color: #4070f4;
+    --side-nav: #010718;
+    --text-color: #fff;
+    --search-bar: #f2f2f2;
+    --search-text: #010718;
+    --verde_1: #69da32;
+    --verde_2: #002e00;
+    --verde_3: #4e8d08;
+
 }
+
 
 /* general */
 
@@ -28,3 +29,4 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;;
 }
+
