@@ -32,6 +32,24 @@
     }
 }
 
+@media (max-width: 770px) {
+    .about .container .info-about {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .about .container .info-about p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .container .info-about span {
+        width: 200px;
+        height: 2px;
+        
+    }
+}
+
 @media (max-width: 540px) {
     .home .container .info-home .info .info-title h2 {
         font-size: 1.8rem;
