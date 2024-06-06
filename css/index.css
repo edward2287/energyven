@@ -28,3 +28,245 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;;
 }
+
+
+
+
+.Background{
+    width: 100%;
+    height: 50vh;
+    background-image: url("../recursos/formatos_originales/sdsdasdas.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo_footer img{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+   
+}
+
+.nav_footer{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.nav_list{
+    width: 100%;
+
+   
+    
+} 
+
+.listas a{
+    width: 100%;
+    text-decoration: none;
+    color: var(--blanco);
+    margin-left: 50px;
+
+    
+   
+}
+
+.contactos{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    
+
+
+}
+
+.list_contac{
+    width: 100%;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+
+}
+
+.h3{
+    color: var(--blanco);
+    font-size: 14px;
+}
+
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    color: var(--blanco);
+    font-size: 1.2rem;
+    
+}
+.icon a {
+    color: var(--blanco);
+    text-decoration: none;
+
+}
+
+.iconos a i{
+    color: var(--blanco);
+    font-size: 1.2rem;
+}
+
+
+.derechos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 300px;
+    margin-top: 48px;
+}
+
+
+@media (max-width:630px){
+    /* Aquí van todos los estilos CSS */
+
+    .logo_footer img{
+        width: 150px;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .listas a{
+        font-size: 0.8rem;
+
+
+    }
+
+    .icon a{
+        font-size: 0.8rem;
+    }
+
+
+    .derechos{
+        gap: 200px;
+        margin-top: 107px;
+    }
+
+    
+  }
+
+
+  @media (max-width:555px){
+
+
+
+    .listas a{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+
+
+    }
+
+    
+    .derechos{
+        gap: 200px;
+        margin-top: 108px;
+    }
+
+
+
+  }
+
+  @media (max-width:552px){
+
+    .listas a{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+
+
+    }
+
+    .list_contac a{
+        gap: 20px;
+    
+    }
+
+    .icon a{
+        flex-direction: column;
+    }
+
+    .derechos{
+        gap: 200px;
+        margin-top: 80px;
+    }
+
+  }
+
+  @media (max-width:420px){
+
+
+  
+
+    .derechos{
+        gap: 50px;
+        margin-top: 80px;
+    }
+
+  }
+
+  @media (max-width:407px){
+
+    .logo_footer img{
+        width: 105px;
+        height: 105px;
+        
+    }
+
+
+    .listas a{
+        display: flex;
+        flex-direction: column;
+        padding-right: 90px;
+    
+    }
+    .list_contac{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+
+
+    .derechos{
+        gap: 20px;
+        margin-top: 3px;
+        font-size: 0.6rem;
+        
+    }
+
+  }
+
+  @media (max-width:266px){
+
+
+   .derechos{
+    display: none;
+   }
+
+
+
+   }
