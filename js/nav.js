@@ -34,3 +34,10 @@ const body = document.querySelector("body"),
                 nav.classList.remove("active");
             }
         });
+
+//js codigo para cambio de color de nav al dar scroll
+
+        window.addEventListener("scroll" , function(){
+            const header = document.querySelector("header");
+            header.classList.toggle("abajo" , window.scrollY>50);
+        });

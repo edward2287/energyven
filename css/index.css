@@ -12,6 +12,8 @@
     --nav-color: transparent;
     --side-nav: #010718;
     --text-color: #fff;
+    --text-color2:#333;
+    --line-section: #ccc;
     --search-bar: #f2f2f2;
     --search-text: #010718;
     --verde_1: #69da32;
@@ -28,7 +30,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* home */
@@ -124,6 +127,9 @@
     font-size: .9rem;
 }
 
+/* este boton se usara para la pagina */
+    /* inicio */
+
 .btn {
     text-decoration: none;
     color: var(--text-color);
@@ -210,8 +216,7 @@
     transition-delay: .75s;
 }
 
-
-
+/* final de boton */
 
 
 /* home - imagen de paneles home */
@@ -226,4 +231,116 @@
     background-size: contain;
     background-position: right;
 
+}
+
+
+/* =====================About========================== */
+
+.about {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 5rem;
+    min-height: 100dvh;
+}
+
+/* este title se usara para las secciones */
+
+    /* inicio */
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title span {
+    width: 10px;
+    height: 10px;
+    background: var(--line-section);
+    border-radius: 50%;
+    position: relative;
+}
+
+.title #point1::before {
+    content: '';
+    position: absolute;
+    width: 2500px;
+    height: 2px;
+    background: var(--line-section);
+    top: 4px;
+    right: 8px;
+
+}
+
+.title #point2::before {
+    content: '';
+    position: absolute;
+    width: 2500px;
+    height: 2px;
+    background: var(--line-section);
+    top: 4px;
+    left: 8px;
+
+}
+
+.title h3 {
+    font-size: 1.8rem;
+    color: var(--verde_3);
+}
+
+/* final titulo general */
+
+.about .container {
+    width: 100%;
+    min-height: 70vh;
+    background: url(../recursos/aboutus-bg-removebg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+
+
+}
+
+.about .container .info-about {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    
+
+
+}
+
+.about .container .info-about p {
+    width: 48%;
+    height: 100%;
+    padding: 1rem;
+    color: var(--text-color2);
+    
+    
+}
+
+.about .container .info-about span {
+    width: 2px;
+    height: 200px;
+    background: var(--line-section);
+}
+
+.about .container .btn {
+    color: var(--text-color2);
+}
+
+.about .container .btn:hover {
+    color: var(--text-color);
 }
