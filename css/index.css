@@ -9,7 +9,7 @@
 :root {
     /* colors */
     --body-color:#f8f8f8;
-    --nav-color: #4070f4;
+    --nav-color: transparent;
     --side-nav: #010718;
     --text-color: #fff;
     --search-bar: #f2f2f2;
@@ -30,3 +30,30 @@
     font-family: "Poppins", sans-serif;;
 }
 
+.home {
+    background: url(../recursos/home-sinbg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home .container .img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
