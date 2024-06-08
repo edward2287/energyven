@@ -360,3 +360,149 @@
     min-height: 100dvh;
     
 }
+
+/* carrusel */
+
+.services .container {
+    width: 90%;
+    height: 550px;
+    background: #f5f5f5;
+    box-shadow: 0 8px 12px #dbdbdb;
+    position: relative;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.services .container .slider {
+    position: relative;
+    transition: all .3s ease;
+}
+
+
+.services .container .slider .item {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, 50%);
+    border-radius: 20px;
+    box-shadow: 0 8px 12px #505050;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+
+.services .container .slider .item:nth-child(1),
+.services .container .slider .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all .5s ease;
+
+
+}
+
+.services .container .slider .item:nth-child(3) {
+    left: 50%;
+}
+
+.services .container .slider .item:nth-child(4) {
+    left: calc(50% + 220px);
+}
+
+.services .container .slider .item:nth-child(5) {
+    left: calc(50% + 440px);
+    
+}
+
+.services .container .slider .item:nth-child(n + 6) {
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.services .container .slider .item .content {
+width: 400px;
+margin-left: 100px;
+display: none;
+}
+
+.services .container .slider .item:nth-child(2) .content {
+    display: block;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.services .container .slider .item .content .name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--text-color);
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.services .container .slider .item .content .description {
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out .3s 1 forwards;
+}
+
+.services .container .slider .item .content .btn {
+    opacity: 0;
+    animation: animate 1s ease-in-out .6s 1 forwards;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translate(0,100px);
+        filter: blur(33px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0px);
+    }
+}
+
+.services .container .button {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.services .container .button button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: all .3s ease;
+    background: var(--verde_3);
+}
+
+.services .container .button button i {
+    font-size: 1.3rem;
+}
+
+.services .container .button button:hover {
+    background: var(--verde_1);
+    color: var(--text-color);
+}
+
+/* ==================final Services=========== */
