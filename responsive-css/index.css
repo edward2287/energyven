@@ -61,6 +61,12 @@
         width: 100%;
         text-align: center;
     }
+
+    .contador .container .container-grid {
+        grid-template-columns: repeat(2, 1fr);
+    
+    
+    }
 }
 
 @media (max-width: 942px) {
@@ -132,7 +138,14 @@
         
     }
 
+}
 
+@media (max-width: 500px) {
+    .contador .container .container-grid {
+        grid-template-columns: repeat(1, 1fr);
+    
+    
+    }
 }
 
 @media (max-width: 450px) {

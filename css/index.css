@@ -369,7 +369,7 @@
     background: #f5f5f5;
     box-shadow: 0 8px 12px #dbdbdb;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     border-radius: 10px;
 }
 
@@ -427,7 +427,7 @@
 
 .services .container .slider .item:nth-child(n + 6) {
     left: calc(50% + 660px);
-    opacity: 0;
+    
 }
 
 .services .container .slider .item .content {
@@ -506,3 +506,114 @@ display: none;
 }
 
 /* ==================final Services=========== */
+
+/* ==================Inicio contador=========== */
+
+.contador {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+}
+
+.contador .container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+    justify-content: center;
+}
+
+.contador .container .container-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+}
+
+.contador .container .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 8px 8px 16px rgba(165,177,198,.8);
+    box-shadow: inset 8px,8px, 16px rgba(255,255,255,.8);
+    border-radius: 10px;
+}
+
+.contador .container .items span:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contador .container .items span:nth-child(1) img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.contador .container .items .picture {
+    padding-bottom: 10px;
+}
+
+.contador .container .items .cantidad {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: var(--text-color2);
+}
+
+.contador .container .items .info {
+    width: 90%;
+    text-align: center;
+    color: var(--text-color2);
+    padding-bottom: 1rem;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.ocultar {
+    opacity: 0;
+}
+
+.animar {
+    animation: aparecer 1.3s;
+}
+
+
+/* ==================final contador=========== */
+
+/* ==================Inicio galeria=========== */
+
+.galeria {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 5rem;
+    min-height: 100dvh;
+    
+}
+
+
+/* ==================final galeria=========== */
+
+

@@ -6,6 +6,8 @@
     <title>EnergyVen</title>
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- aos animation scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./responsive-css/index.css">
@@ -42,7 +44,7 @@
                             <a href="#services">Our Services</a>
                         </li>
                         <li class="link">
-                            <a href="#">Project</a>
+                            <a href="#galeria">Projects</a>
                         </li>
                         <li class="link">
                             <a href="#">Contact Us</a>
@@ -277,8 +279,72 @@
     </div>
 
     <!-- Final de Servicios -->
+
+    <!-- inicio de contador -->
+
+    <div class="contador">
+        <section class="container">
+            <section class="container-grid contador_principal">
+                <section class="items contador ocultar">
+                    <span class="picture">
+                        <img src="./recursos/empresario.webp" alt="costumer">
+                    </span>
+                    <article class="cantidad contador_cantidad" data-cantidad-total="630" id="cont1">0</article>
+                    <span class="info">Happy Customers</span>
+                </section>
+    
+                <section class="items contador ocultar">
+                    <span class="picture">
+                        <img src="./recursos/lista-de-tareas.webp" alt="task">
+                    </span>
+                    <article class="cantidad contador_cantidad" data-cantidad-total="541" id="cont1">0</article>
+                    <span class="info">Project Done</span>
+                </section>
+    
+                <section class="items contador ocultar">
+                    <span class="picture">
+                        <img src="./recursos/copa2.webp" alt="copa">
+                    </span>
+                    <article class="cantidad contador_cantidad" data-cantidad-total="30" id="cont1">0</article>
+                    <span class="info">Awards Win</span>
+                </section>
+    
+                <section class="items contador ocultar">
+                    <span class="picture">
+                        <img src="./recursos/constructor.webp" alt="constructur">
+                    </span>
+                    <article class="cantidad contador_cantidad" data-cantidad-total="231" id="cont1">0</article>
+                    <span class="info">Client Works</span>
+                </section>
+            </section>
+            
+
+        </section>
+    </div>
+
+    <!-- final de contador -->
+
+    <!-- inicio galeria -->
+
+    <div class="galeria" id="galeria">
+        <section class="title">
+            <span id="point1"></span>
+            <h3>Projects</h3>
+            <span id="point2"></span>
+        </section>
+        <section class="container"></section>
+    </div>
+
+    <!-- final galeria -->
     <!-- ================js=============== -->
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- codigo js -->
     <script src="./js/nav.js"></script>
     <script src="./js/servicios.js"></script>
+    <script src="./js/contador.js"></script>
 </body>
 </html>
