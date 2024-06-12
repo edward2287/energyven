@@ -371,19 +371,19 @@
             <section class="formulario">
                 <form class="form">
                     <label class="label">
-                        <input type="text" name="" id="" class="input" placeholder=" ">
+                        <input type="text" id="name" class="input" placeholder=" ">
                         <span class="span">Your Name</span>
                     </label>
                     <label class="label">
-                        <input type="number" name="" id="" class="input" placeholder=" ">
+                        <input type="number" id="phone" class="input" placeholder=" ">
                         <span class="span">Phone Number</span>
                     </label>
                     <label class="label">
-                        <input type="email" name="" id="" class="input" placeholder=" ">
+                        <input type="email" id="mail" class="input" placeholder=" ">
                         <span class="span">Your Email</span>
                     </label>
                     <label class="label">
-                        <textarea name="" id="" class="text-area" placeholder="Message" rows="4"></textarea>
+                        <textarea id="text-area" class="text-area" placeholder="Message" rows="4"></textarea>
                     </label>
                 
                     <button type="submit" class="btn">
@@ -480,15 +480,21 @@
     </footer>
 
     <!-- final footer -->
+
+
     <!-- ================js=============== -->
     <!-- aos animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <!-- Correo electronico -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- codigo js -->
     <script src="./js/nav.js"></script>
     <script src="./js/servicios.js"></script>
     <script src="./js/contador.js"></script>
+    <script src="./js/correo.js"></script>
 </body>
 </html>
