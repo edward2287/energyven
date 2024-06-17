@@ -915,6 +915,67 @@ display: none;
 
 /* ==================final Contactos=========== */
 
+/* ==================Valores Metricos========== */
+
+.valores_metricos{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ==================final de valores metricos */
+
+/* ==================Redes Sociales============= */
+
+.bg_redes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+.Redes{
+    width: 90%;
+    margin: 0 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.4rem;
+    min-width: 300px;
+
+}
+.Insta{
+    width: 17rem;
+    height: 20rem;
+
+}
+
+
+
+.Face{
+    width: 17rem;
+    height: 20rem;
+    
+
+}
+
+
+
+.tiktok-embed{
+    width: 17rem;
+    height: 20rem;
+    
+    
+}
+
+
+
 /* ==================Inicio de Footer=========== */
 
 .footer {
